@@ -1,8 +1,10 @@
 # Card-rotate
 Hi guys, this time I bring you a prototype of simple rotary cards
+![6mh](https://github.com/jix-oscar-rodriguez/Card-rotate/assets/127907655/c2ce5fb7-307f-4630-9695-0ca7a5374e6a)
 
-[https://th.bing.com/th/id/OIP.ra6jPv_viKzFW_82CqLlzwAAAA?pid=ImgDet&rs=1](https://i.pinimg.com/originals/87/cb/2f/87cb2f2124a037418e961be883770595.gif)
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Hola  chicos en esta ocasión les traigo un prototipo de cards  rotativas simples
 
-[https://th.bing.com/th/id/OIP.ra6jPv_viKzFW_82CqLlzwAAAA?pid=ImgDet&rs=1](https://i.pinimg.com/originals/87/cb/2f/87cb2f2124a037418e961be883770595.gif)https://i.pinimg.com/originals/87/cb/2f/87cb2f2124a037418e961be883770595.gif
+
+![6mh](https://github.com/jix-oscar-rodriguez/Card-rotate/assets/127907655/f9d5a5b1-8b00-472b-a1c4-a0f5e0bcde54)
