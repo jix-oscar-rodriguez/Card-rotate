@@ -1,0 +1,47 @@
+/* THIS CSS IS CREATE Oscar Rodriguez */
+
+body {
+    height          : 100vh; /* Sets the height of the body of the document to 100% of the viewport height */
+    display         : flex; /* Uses flexbox to center child elements */
+    justify-content : center; /* Centers child elements horizontally */
+    align-items     : center; /* Centers child elements vertically */
+    background-color: black; /* Sets the background color of the body of the document */
+}
+
+.card {
+    width          : 400px; /* Width of the card */
+    height         : 370px; /* Height of the card */
+    position       : relative; /* Relative positioning to allow for absolute positioning of child elements */
+    transition     : .5s; /* Smooth transition of properties over 0.5 seconds */
+    transform-style: preserve-3d; /* Preserves 3D effect when transforming child elements */
+}
+
+.front,
+.back {
+    position       : absolute; /* Absolute positioning to overlay front and back elements */
+    height         : 100%; /* Height is 100% of parent element */
+    width          : 100%; /* Width is 100% of parent element */
+    display        : flex; /* Uses flexbox to center content */
+    justify-content: center; /* Centers content horizontally */
+    align-items    : center; /* Centers content vertically */
+    font-size      : 2rem; /* Font size of text */
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family of text */
+    font-weight    : 600; /* Font weight of text */
+    border-radius  : 3rem; /* Border radius to make corners rounded */
+}
+
+.front {
+    background-image   : radial-gradient(circle at 50% -20.71%, #e459ea 0, #c84ded 16.67%, #a544f0 33.33%, #783cf2 50%, #2538f4 66.67%, #0039f5 83.33%, #003af6 100%); /* Background image of the front of the card with a radial gradient */
+    z-index            : 2; /* Z-index to place the front of the card on top of the back */
+    backface-visibility: hidden; /* Hides the front of the card when flipped */
+}
+
+.back {
+    background-image: linear-gradient(180deg, #cdc3ff 0, #9d9df2 50%, #7278b7 100%); /* Background image of the back of the card with a linear gradient */
+    z-index         : 1; /* Z-index to place the back of the card underneath the front */
+    transform       : rotateY(180deg); /* Rotates the back of the card 180 degrees along the Y-axis */
+}
+
+.container:hover .card {
+    transform: rotateY(180deg); /* Rotates the card 180 degrees along the Y-axis when the container is hovered over */
+}

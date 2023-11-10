@@ -1,0 +1,47 @@
+/* ESTE CSS ES CREADO POR Oscar Rodriguez */
+
+body {
+    height          : 100vh; /* Altura del cuerpo del documento al 100% de la altura de la ventana del navegador */
+    display         : flex; /* Se usa flexbox para centrar los elementos hijos */
+    justify-content : center; /* Centra los elementos hijos horizontalmente */
+    align-items     : center; /* Centra los elementos hijos verticalmente */
+    background-color: black; /* Color de fondo del cuerpo del documento */
+}
+
+.card {
+    width          : 400px; /* Ancho de la tarjeta */
+    height         : 370px; /* Altura de la tarjeta */
+    position       : relative; /* Posicionamiento relativo para permitir el posicionamiento absoluto de los elementos hijos */
+    transition     : .5s; /* Transición suave de las propiedades durante 0.5 segundos */
+    transform-style: preserve-3d; /* Preserva el efecto 3D al transformar elementos hijos */
+}
+
+.front,
+.back {
+    position       : absolute; /* Posicionamiento absoluto para superponer los elementos front y back */
+    height         : 100%; /* Altura al 100% del elemento padre */
+    width          : 100%; /* Ancho al 100% del elemento padre */
+    display        : flex; /* Se usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items    : center; /* Centra el contenido verticalmente */
+    font-size      : 2rem; /* Tamaño de la fuente del texto */
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia de fuentes del texto */
+    font-weight    : 600; /* Grosor de la fuente del texto */
+    border-radius  : 3rem; /* Radio de la frontera para hacer las esquinas redondeadas */
+}
+
+.front {
+    background-image   : radial-gradient(circle at 50% -20.71%, #e459ea 0, #c84ded 16.67%, #a544f0 33.33%, #783cf2 50%, #2538f4 66.67%, #0039f5 83.33%, #003af6 100%); /* Imagen de fondo del frente de la tarjeta con un gradiente radial */
+    z-index            : 2; /* Índice z para colocar el frente de la tarjeta encima del dorso */
+    backface-visibility: hidden; /* Oculta el frente de la tarjeta cuando se voltea */
+}
+
+.back {
+    background-image: linear-gradient(180deg, #cdc3ff 0, #9d9df2 50%, #7278b7 100%); /* Imagen de fondo del dorso de la tarjeta con un gradiente lineal */
+    z-index         : 1; /* Índice z para colocar el dorso de la tarjeta debajo del frente */
+    transform       : rotateY(180deg); /* Rota el dorso de la tarjeta 180 grados a lo largo del eje Y */
+}
+
+.container:hover .card {
+    transform: rotateY(180deg); /* Rota la tarjeta 180 grados a lo largo del eje Y cuando se pasa el cursor sobre el contenedor */
+}
